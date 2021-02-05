@@ -1,0 +1,481 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>App+1 | 在 Windows 上使用 Android 手机，你可以试试这款图形化工具/转自少数派 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>andante's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="App+1 | 在 Windows 上使用 Android 手机，你可以试试这款图形化工具/转自少数派">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-05 21:51" pubdate>
+        2021年2月5日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      14
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">App+1 | 在 Windows 上使用 Android 手机，你可以试试这款图形化工具/转自少数派</h1>
+            
+            <div class="markdown-body">
+              <div data-v-c778343a="" data-v-76c89034="" id="" class="article-body"><div data-v-c778343a="" class="articleWidth-content"><div data-v-c778343a="" class="content wangEditor-txt"><p>对于在 PC 上操作 Android 手机的工具，很多玩家首先想到的是 <a target="_blank" rel="noopener" href="https://sspai.com/post/56178">Scrcpy</a>——通过这款命令行工具，我们可以使用电脑的键鼠以及触摸屏对 Android 手机进行操作，让「手机屏幕也能搬进电脑」中。</p><p>但 <a target="_blank" rel="noopener" href="https://sspai.com/post/56178">Scrcpy</a> 终究是一款基于命令行的工具，在使用时还是不够方便直观，那么有没有一款工具可以通过图形化的界面来进行操作设置，让我们可以更加直观方便地使用电脑来操作 Android 手机呢？</p><p>今天要介绍的 <a href="https://anl.ink/" target="_blank">AnLink</a> 就是这么一款工具。</p><p>和 Scrcpy 使用类似，通过 AnLink 连接以及控制 Android 同样基于 ADB 调试命令，因此在手机连接电脑时需要开启 USB 调试功能，并且在连接之后选择运行本电脑对其进行调试，如果一切顺利的话，你会很快可以通过 AnLink 在你的电脑桌面上看到你的 Android 手机桌面。</p><figure class="ss-imgRows ss-img-wrapper" figcaption="打开 USB 调试，以及 USB 调试（安全设置）"><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/66549c07dd9e374816222586373f0247.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/66549c07dd9e374816222586373f0247.png" data-index="0" class="lazyLoadEnd">
+          </div><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/4385cd27019299f6fafe6f09b9ef0834.jpg?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/4385cd27019299f6fafe6f09b9ef0834.jpg" data-index="1" class="lazyLoadEnd">
+          </div><figcaption>打开 USB 调试，以及 USB 调试（安全设置）</figcaption></figure><p>对于不同的手机，AnLink 的支持情况也并不一样：Pixel 系列原生 Android 相对比较简单，开启开发者模式之后勾选 USB 调试即可；而对于其他 Android 手机则还需要开启另外的调试选项，比如说 Mi Note 3 除了USB 调试之外，还需要开启 USB调试（安全设置）来实现 AnLink 上键鼠映射带来的模拟点击操作。</p><figure class="ss-imgRows ss-img-wrapper" figcaption="采用 USB 连接 Android 设备"><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/415b85c3cc1a46a415498dc41cbca1b0.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/415b85c3cc1a46a415498dc41cbca1b0.png" data-index="2" class="lazyLoadEnd">
+          </div><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/aee42521f5b33dac46112c252946b1af.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/aee42521f5b33dac46112c252946b1af.png" data-index="3" class="lazyLoadEnd">
+          </div><figcaption>采用 USB 连接 Android 设备</figcaption></figure><p>功能方面，我们可以通过对 AnLink 的操作面板上多个「软按钮」进行操作，来实现 Android 中物理按键的功能。通过点击鼠标你就可以「关闭手机屏幕」，实现按下「手机的电源按钮」、将「手机横屏」以及「对手机音量大小的控制」。除此之外还有一个针对无线连接控制的「无线设备管理器」。</p><figure class="ss-imgRows ss-img-wrapper" figcaption="对手机屏幕画质进行调整"><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/03/02f02b68bf476d6acc354e047a41a4f3.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/03/02f02b68bf476d6acc354e047a41a4f3.png" data-index="4" class="lazyLoadEnd">
+          </div><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/03/493b118cc77bddd986466ecb8ca20456.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/03/493b118cc77bddd986466ecb8ca20456.png" data-index="5" class="lazyLoadEnd">
+          </div><figcaption>对手机屏幕画质进行调整</figcaption></figure><p>使用 USB 连接手机时，AnLink 会对「投射」到电脑屏幕上的手机显示画质进行降低，从而确保电脑操作的流畅性，当然在设置中你可以对投射画面的质量进行调整，不过需要说明的是，如果将画质设置得较高，那么在进行鼠标操作时会存在一些卡顿和延迟。</p><figure class="ss-imgRows ss-img-wrapper" figcaption="使用电脑键盘进行快速中文输入"><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/498f8223529ba41087ec523111327479.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/498f8223529ba41087ec523111327479.png" data-index="6">
+          </div><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/87ade916cfae5325eb4ebceacca268f9.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/87ade916cfae5325eb4ebceacca268f9.png" data-index="7">
+          </div><figcaption>使用电脑键盘进行快速中文输入</figcaption></figure><p><strong>而要说到 AnLink 在操作上最让我满意的地方，可能就是通过 AnLink 进行文本输入了</strong>。由于 AnLink 将电脑上的键盘变成了单纯的输入硬件，因此我们只需要将电脑的输入法改成英文输入模式，然后调整 Android 上的输入法为中文输入法，就可以非常高效地实现 Android 中文文本输入。此外 AnLink 还支持跨端的剪切板同步——在电脑上使用 「Ctrl + C」复制文本，然后在 AnLink 投射的手机桌面下按下「Ctrl + V」就可以将文本跨端粘贴复制。</p><figure class="ss-imgRows ss-img-wrapper" figcaption="无线连接设备添加入口"><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/90200aa50a549553b45af9eb9c0b8cb5.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/90200aa50a549553b45af9eb9c0b8cb5.png" data-index="8">
+          </div><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/baf664a9c2006d5cc6f35fce474fe8d9.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/baf664a9c2006d5cc6f35fce474fe8d9.png" data-index="9">
+          </div><figcaption>无线连接设备添加入口</figcaption></figure><p><strong>除了传统的 USB 连接之外，AnLink 还支持以无线的方式来操控手机</strong>，这对于不方便将手机连接到电脑，但同样希望使用电脑进行手机操作的朋友而言很实用。首次添加为 Wi-Fi 控制设备还是需要手机进行一次 USB 连接，然后再点击左下角 AnLink 的操作面板「Wi-Fi Devices」上点击「Enable Wifi Connection」来无线连接调试当前的设备。连接成功之后设备标签上会显示为「Wi-Fi」这就表明设备通过 WiFi 进行了无线连接。同时当前设备也被保存到设备库中，方便下一次直接进行无线连接。</p><figure class="ss-imgRows ss-img-wrapper" figcaption="切换多个无线连接设备"><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/4275dfbd2f5b564da757cf86b11d4a9d.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/4275dfbd2f5b564da757cf86b11d4a9d.png" data-index="10">
+          </div><div class="ss-img-row-item">
+            <img src="https://cdn.sspai.com/2021/02/02/fbfb5e21ca871645e0c961351c9e5ca8.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" srcset="/img/loading.gif" alt="" data-original="https://cdn.sspai.com/2021/02/02/fbfb5e21ca871645e0c961351c9e5ca8.png" data-index="11">
+          </div><figcaption>切换多个无线连接设备</figcaption></figure><p>无线连接在使用上和 USB 连接并没有太大的区别，并且无线连接的手机屏幕画质也可以在设置中进行调整。如果你拥有多个 Android 设备的话还可以轻松进行设备切换，并且默认情况下通过 WiFi 连接时可以在设备的屏幕关闭情况下通过 Anlink 在 PC 上继续操作。</p><p>当然现阶段的 AnLink 功能上还非常基础。对比很多同样也是基于 Scrcpy 的第三方可视化工具，你会发现 AnLink 不支持电脑和手机互传文件，当然就更别提高级的安装包拖拽来安装应用了。此外如果你希望通过 AnLink 来实现电脑键鼠操控手机打游戏的话，那么不支持电脑键盘按键映射也是 AnLink 的一大硬伤，这使得你无法实现电脑键盘模拟触摸屏上的多点触摸，可以实现的操作就只剩下了简单的单击操作。</p><figure class="image ss-img-wrapper"><img src="https://cdn.sspai.com/2021/02/02/85262692fadd636915e9c0d6e926d476.jpg?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" srcset="/img/loading.gif" data-original="https://cdn.sspai.com/2021/02/02/85262692fadd636915e9c0d6e926d476.jpg" data-index="12"><figcaption>无需多点触控操作的手游可以获得较好的体验</figcaption></figure><p>总的来说，如果你希望通过电脑来对自己的手机进行一些简单操控，AnLink 的图形化交互可以大幅简化连接和设置过程，相比 Scrcpy 要好用不少。但就目前的功能而言其实乏善可陈，只能期待后续的更新中逐步完善了。</p><p style="margin-left:0px;">&gt; 下载少数派 2.0 <a href="https://sspai.com/page/client" target="_blank">客户端</a>、关注 <a href="https://sspai.com/s/J71e" target="_blank">少数派公众号</a>，解锁全新阅读体验 📰</p><p style="margin-left:0px;">&gt; 实用、好用的 <a href="https://sspai.com/mall" target="_blank">正版软件</a>，少数派为你呈现 🚀</p></div><!----></div><div data-v-c778343a="" style="border: 1px solid transparent;"></div><!----><!----></div>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%BA%94%E7%94%A8/">应用</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/05/2021-02-05-3/">
+                        <span class="hidden-mobile">2021-02-05-3</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
